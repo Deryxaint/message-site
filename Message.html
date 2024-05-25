@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Animated Confession</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('background-image-url.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            overflow: scroll;
+            color: #ffffff;
+        }
+        .confession-container {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            z-index: 2;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .star-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: url('star-logo-url.png') no-repeat center center; /* Replace with your star logo URL */
+            background-size: contain;
+        }
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .link-box {
+            margin-top: 40px; /* Increased margin-top to add space */
+            padding: 10px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+        .link-box a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            word-wrap: break-word;
+        }
+        .signature {
+            font-size: 1em;
+            font-style: italic;
+        }
+        .animation {
+            position: absolute;
+            width: 100px; /* Adjusted size */
+            height: 100px; /* Adjusted size */
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: float 5s infinite;
+        }
+        .left-animation-1 {
+            top: 10%;
+            left: 5%;
+            width: 80px; /* Adjusted size for mobile */
+            height: 80px; /* Adjusted size for mobile */
+            background-image: url('left-cartoon-1-url.png'); /* Replace with your left cartoon image URL */
+        }
+        .left-animation-2 {
+            top: 70%;
+            left: 5%;
+            width: 80px; /* Adjusted size for mobile */
+            height: 80px; /* Adjusted size for mobile */
+            background-image: url('left-cartoon-2-url.png'); /* Replace with your second left cartoon image URL */
+            animation-delay: 2.5s;
+        }
+        .right-animation-1 {
+            top: 10%;
+            right: 5%;
+            width: 80px; /* Adjusted size for mobile */
+            height: 80px; /* Adjusted size for mobile */
+            background-image: url('right-cartoon-1-url.png'); /* Replace with your right cartoon image URL */
+        }
+        .right-animation-2 {
+            top: 70%;
+            right: 5%;
+            width: 80px; /* Adjusted size for mobile */
+            height: 80px; /* Adjusted size for mobile */
+            background-image: url('right-cartoon-2-url.png'); /* Replace with your second right cartoon image URL */
+            animation-delay: 2.5s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes rotateStar {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); } /* Adjusted for smaller screen */
+        }
+    </style>
+</head>
+<body>
+    <div class="confession-container">
+        <div class="star-logo"></div>
+        <div class="message">
+            Dear [Sister's Name],
+            <br><br>
+            I hope this message finds you well. I wanted to take a moment to express how much you mean to me. 
+            Growing up with you has been an incredible journey, filled with countless memories, laughter, and sometimes tears. 
+            You've been my confidant, my partner in crime, and my biggest supporter.
+            <br><br>
+            Life hasn't always been easy, but knowing you are by my side has given me strength and courage to face every challenge. 
+            Your kindness, generosity, and unwavering love are just a few of the many qualities that make you so special to me.
+            <br><br>
+            Today, I want to confess something that has been in my heart for a long time. I am deeply grateful for you. 
+            Your presence in my life is a gift I cherish every day. 
+            I love you more than words can say, and I am so proud to call you my sister.
+            <br><br>
+            With all my love,
+            <br>
+            [Your Name]
+        </div>
+        <div class="link-box">
+            For more about our memories, visit: <a href="https://www.example.com" target="_blank">https://www.example.com</a> <!-- Replace with your website URL -->
+        </div>
+    </div>
+    <div class="animation left-animation-1"></div>
+    <div class="animation left-animation-2"></div>
+    <div class="animation right-animation-1"></div>
+    <div class="animation right-animation-2"></div>
+</body>
+</html>
