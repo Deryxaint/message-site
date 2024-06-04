@@ -18,22 +18,24 @@
             justify-content: center;
             min-height: 100vh;
             font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0; /* Changed background color to make it more appealing */
         }
 
         h1 {
-            color: black;
+            color: #333; /* Changed text color for better readability */
             font-size: 4vw; /* Responsive font size */
             font-weight: 500;
             text-align: center;
+            margin-bottom: 30px; /* Added margin for spacing */
         }
     </style>
 </head>
 <body>
-    <h1>Cindy itu <span id="title"></span></h1>
+    <h1>Hey there, <span id="title"></span></h1> <!-- Made the greeting more inviting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script>
         var typed = new Typed("#title", {
-            strings: ["cantik", "pintar", "lucu", "keren!", "adekku."],
+            strings: ["friend!", "you're amazing!", "you're loved!", "you're appreciated!"], // Added positive affirmations
             typeSpeed: 100,
             loop: false
         });
